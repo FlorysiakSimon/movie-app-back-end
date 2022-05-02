@@ -16,6 +16,7 @@
 - [multer](https://www.npmjs.com/package/multer)
 - [nodemailer](https://nodemailer.com/about/)
 - [request](https://www.npmjs.com/package/request)
+- [themoviedbAPI](https://developers.themoviedb.org/3/getting-started/introduction)
 
 ## Installation backend
 
@@ -63,7 +64,7 @@
 - `http://localhost:3000/movies/search/:movie/:page`GET method to search movies.
 . `movie:string page:number`
 - `http://localhost:3000/movies/popular/:page` Get a list of the current popular movies on TMDB. This list updates daily. `page:number`discover/:page/:genres
-- `http://localhost:3000/movies/discover/:page/:genres` Discover movies by different types of data. `page:number/genres:string`
+- `http://localhost:3000/movies/discover/:page/:genres` Discover movies by different types of data. `page:number/genres:number` use id separated by a comma for genres ex:'11,12,25'
 - `http://localhost:3000/movies/actor/:id` Get the primary person details by id. `id:number`
 - `http://localhost:3000/movies/actor/:id/movies` Get the movie credits for a person. `id:number`
 
